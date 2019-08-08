@@ -9,8 +9,8 @@ import UIKit
 import MediaPlayer
 
 public protocol VRLevelControllerDelegate {
-    func onValueChanged(sender:VRLevelButton, value:Float);
-    func onDismiss(sender:VRLevelButton, value:Float);
+    func onValueChanged(sender:VRLevelButton, value:Float, step:Int);
+    func onDismiss(sender:VRLevelButton, value:Float, step:Int);
 }
 
 public class VRLevelViewController: UIViewController {
@@ -109,7 +109,7 @@ public class VRLevelViewController: UIViewController {
             self.checkIcon();
         }
         
-        delegate?.onValueChanged(sender: caller!, value: Float(self.value!));
+        delegate?.onValueChanged(sender: caller!, value: Float(self.value!), step: currentStep);
     }
     
     public func setType(_ type:VRLevelButtonType){
@@ -157,7 +157,7 @@ public class VRLevelViewController: UIViewController {
                 startY = point.y;
             }else{
                 self.dismiss(animated: true) {
-                    self.delegate?.onDismiss(sender: self.caller!, value: Float(1.0 - self.value!));
+                    self.delegate?.onDismiss(sender: self.caller!, value: Float(1.0 - self.value!), step: currentStep);
                 }
             }
         }
