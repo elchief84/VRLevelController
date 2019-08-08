@@ -89,6 +89,10 @@ public class VRLevelButton: UIButton {
         self.type = type;
     }
     
+    private  func getType(_ type:VRLevelButtonType){
+        return self.type;
+    }
+    
     private  func setColor(_ color:UIColor){
         self.color = color;
     }
