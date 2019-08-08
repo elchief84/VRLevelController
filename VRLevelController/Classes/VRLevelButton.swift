@@ -85,11 +85,11 @@ public class VRLevelButton: UIButton {
         }
     }
     
-    private  func setType(_ type:VRLevelButtonType){
+    private func setType(_ type:VRLevelButtonType){
         self.type = type;
     }
     
-    private  func getType(_ type:VRLevelButtonType){
+    private func getType(_ type:VRLevelButtonType) -> VRLevelButtonType{
         return self.type;
     }
     
