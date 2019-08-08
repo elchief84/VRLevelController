@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="VRLevelController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="JHj-ct-XvT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOI-Oh-0As" customClass="VRLevelButton" customModule="VRLevelController">
+                                <rect key="frame" x="107" y="169" width="200" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="I9c-Zx-i6K"/>
+                                    <constraint firstAttribute="width" constant="200" id="ym0-BJ-Awh"/>
+                                </constraints>
+                                <state key="normal" title="Test Volume"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMo-2M-vEp" customClass="VRLevelButton" customModule="VRLevelController">
+                                <rect key="frame" x="107" y="238" width="200" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9NL-Q5-55Z"/>
+                                    <constraint firstAttribute="width" constant="200" id="JF0-Yq-c4X"/>
+                                </constraints>
+                                <state key="normal" title="Test Custom"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JHj-ct-XvT" secondAttribute="bottom" constant="-34" id="ApU-2V-5gG"/>
+                            <constraint firstItem="JHj-ct-XvT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="GY2-c8-CtY"/>
+                            <constraint firstItem="JHj-ct-XvT" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="NZv-og-tCl"/>
+                            <constraint firstItem="SMo-2M-vEp" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="P61-5P-DK4"/>
+                            <constraint firstAttribute="trailing" secondItem="JHj-ct-XvT" secondAttribute="trailing" id="gEZ-Fr-tyM"/>
+                            <constraint firstItem="mOI-Oh-0As" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="125" id="rKs-zp-ZLI"/>
+                            <constraint firstItem="SMo-2M-vEp" firstAttribute="top" secondItem="mOI-Oh-0As" secondAttribute="bottom" constant="25" id="toP-eS-d1V"/>
+                            <constraint firstItem="mOI-Oh-0As" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="yYS-Wh-asA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customButton" destination="SMo-2M-vEp" id="ILV-OP-Psd"/>
+                        <outlet property="volumeButton" destination="mOI-Oh-0As" id="ORL-5b-tEK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36.231884057971016" y="26.116071428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="902" height="902"/>
+    </resources>
+</document>

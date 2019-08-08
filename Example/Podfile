@@ -1,0 +1,13 @@
+platform :ios, '10.0'
+
+use_frameworks!
+
+target 'VRLevelController_Example' do
+  pod 'VRLevelController', :path => '../'
+
+  target 'VRLevelController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

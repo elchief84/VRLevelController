@@ -1,0 +1,6 @@
+framework module Pods_VRLevelController_Example {
+  umbrella header "Pods-VRLevelController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

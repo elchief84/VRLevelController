@@ -1,0 +1,16 @@
+PODS:
+  - VRLevelController (0.1.0)
+
+DEPENDENCIES:
+  - VRLevelController (from `../`)
+
+EXTERNAL SOURCES:
+  VRLevelController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VRLevelController: 0951eb5fa01f6bdcb10c0e588d53d07d258779b4
+
+PODFILE CHECKSUM: f4c2b4d0ca8fb12253e02b080c8650765fe47273
+
+COCOAPODS: 1.7.5
