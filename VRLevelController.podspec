@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'VRLevelController'
   s.version          = '1.0.0'
-  s.swift_version    = '>=4.0'
+  s.swift_version    = '4.0'
   s.summary          = 'An iOS slider controller.'
 
   s.description      = <<-DESC
