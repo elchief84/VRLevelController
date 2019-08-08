@@ -44,11 +44,11 @@ class ViewController: UIViewController, VRLevelControllerDelegate {
         
     }
     
-    func onValueChanged(sender: VRLevelButton, value: Float) {
+    func onValueChanged(sender: VRLevelButton, value: Float, step:Int) {
         debugPrint("change \(sender) : \(value)");
     }
     
-    func onDismiss(sender: VRLevelButton, value: Float) {
+    func onDismiss(sender: VRLevelButton, value: Float, step:Int) {
         debugPrint("dismiss \(sender) : \(value)");
     }
 

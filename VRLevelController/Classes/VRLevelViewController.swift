@@ -157,7 +157,7 @@ public class VRLevelViewController: UIViewController {
                 startY = point.y;
             }else{
                 self.dismiss(animated: true) {
-                    self.delegate?.onDismiss(sender: self.caller!, value: Float(1.0 - self.value!), step: currentStep);
+                    self.delegate?.onDismiss(sender: self.caller!, value: Float(1.0 - self.value!), step: self.currentStep);
                 }
             }
         }

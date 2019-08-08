@@ -93,6 +93,14 @@ public class VRLevelButton: UIButton {
         return self.type;
     }
     
+    public func getIcons() -> Array<UIImage>{
+        return self.icons!;
+    }
+    
+    public func getMainIcon() -> UIImage{
+        return self.mainIcon!;
+    }
+    
     private  func setColor(_ color:UIColor){
         self.color = color;
     }
