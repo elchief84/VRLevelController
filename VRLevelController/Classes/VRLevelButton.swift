@@ -89,7 +89,7 @@ public class VRLevelButton: UIButton {
         self.type = type;
     }
     
-    private func getType() -> VRLevelButtonType{
+    public func getType() -> VRLevelButtonType{
         return self.type;
     }
     
