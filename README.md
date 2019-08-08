@@ -22,7 +22,8 @@ pod 'VRLevelController'
 
 ## Author
 
-vromano84, vincenzo.romano@healthtouch.eu
+***Vincenzo Romano***
+elchief84 (vincenzo.romano@healthtouch.eu)
 
 ## License
 
